@@ -89,7 +89,29 @@ const checkanswer = () => {
 answerbtnDOM.onclick = checkanswer
 
 submitbtnDOM.onclick = () => {
+    if (!isNaN(answerDOM.valueAsNumber)) {
 
-    alert("Start Again")
+        if (result === Number(answerDOM.value)) {
+            points += 1
+            pointDOM.innerHTML = points
+
+            resultdisplayDOM.classList.remove('wrong')
+
+            resultdisplayDOM.classList.add('correct')
+            resultdisplayDOM.innerHTML = "Correct Answer"
+
+        }
+        else {
+            resultdisplayDOM.classList.remove('correct')
+            resultdisplayDOM.classList.add('wrong')
+            resultdisplayDOM.innerHTML = "Wrong Answer"
+        }
+    }
+    else {
+        alert("Answer Invalid")
+        return
+    }
+
+    alert(`You Scored ${points}/${totalquestion} \n Want to Start Again`)
     window.location.reload()
 }
