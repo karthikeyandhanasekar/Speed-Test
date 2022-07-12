@@ -67,7 +67,7 @@ const checkanswer = () => {
 
         progessDOM.value += 1
         currentquestionno.innerHTML = progessDOM.value + 1
-        answerDOM.value = 0
+        answerDOM.value = ''
 
         RenderNumber()
 
@@ -89,6 +89,7 @@ const checkanswer = () => {
 answerbtnDOM.onclick = checkanswer
 
 submitbtnDOM.onclick = () => {
-    alert("submitted,Start Again")
+
+    alert("Start Again")
     window.location.reload()
 }
