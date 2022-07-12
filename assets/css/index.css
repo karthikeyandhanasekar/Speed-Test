@@ -30,6 +30,7 @@ input :focus {
 body {
     background: grey url('../images/universe-bg1.jpg') no-repeat;
     background-size: cover;
+    background-position: center;
     backdrop-filter: blur(4px);
     height: 100vh;
 }
