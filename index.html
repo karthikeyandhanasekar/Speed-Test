@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Speed Test, Math, Maths,Calculator ,Mathematics, Test,School,Maths Tool">
+    <meta name="author" content="John Doe">
+    <title>Speed Test</title>
+    <link rel="icon" href="./assets/images/icon.png">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="image">
+            <img src="./assets/images/alien1.png" alt="Mathematics Speed Test" loading="lazy">
+        </div>
+        <div class="title">
+            <h1>Speed Test</h1>
+        </div>
+        <div class="mathsimage">
+            <img src="./assets/images/maths.png" alt="Mathematics Speed Test" loading="lazy">
+        </div>
+    </header>
+
+    <main>
+        <!-- starts -->
+        <section class="start">
+            <button type="button" class="startbtn">Start</button>
+        </section>
+
+        <!-- Display Question -->
+        <section class="questionanswer hide ">
+            <div>
+                <h1> Question <span class="currentquestionno">1</span>/<span class="totalquestiono">10</span> </h1>
+            </div>
+            <br />
+            <div class="styledmeter">
+                <progress id="progessvalue" max='0' value="0"></progress>
+            </div>
+            <br />
+            <div class="questionsheet">
+                <div class="question">
+                    <h4> <span class="number1"></span> X <span class="number2"></span> </h4>
+                </div>
+                <br />
+                <div class="input">
+                    <input type="number" id="answer" inputmode="numeric" placeholder="Type here" autofocus required>
+                </div>
+                <button type="button" class="answerbtn">Answer</button>
+                <button type="button" class="submitbtn hide">Submit</button>
+
+            </div>
+            <br />
+
+            <!-- Display Result -->
+            <div>
+                <h1 class="resultdisplay"></h1>
+                <br />
+                <h1> Point <span class="point">0</span>/<span class="totalquestiono"></span> </h1>
+            </div>
+        </section>
+    </main>
+    <br />
+
+    <!-- footer -->
+    <footer>
+        <p><em>Copyright @2022</em></p>
+    </footer>
+
+</body>
+
+<script defer src="./assets/js/index.js"></script>
+
+</html>
