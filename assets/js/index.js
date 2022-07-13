@@ -28,6 +28,19 @@ const RenderNumber = () => {
     number2DOM.innerHTML = number2
 }
 
+
+
+answerDOM.onkeypress = (e) => {
+    if (e.keyCode === 13) {
+
+        if (progessDOM.value === (totalquestion - 1))
+            submitbtnDOM.click()
+        else
+            answerbtnDOM.click()
+    }
+}
+
+
 // start btn click event
 startDOM.onclick = () => {
     totalquestion = prompt("Enter No of Question")
@@ -36,7 +49,6 @@ startDOM.onclick = () => {
         startDOM.click()
         return
     }
-    console.log(totalquestion);
     startDOM.classList.toggle("hide")
     questionanswerDOM.classList.toggle("hide")
     progessDOM.max = totalquestion - 1
